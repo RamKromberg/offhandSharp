@@ -1,9 +1,24 @@
 # offhand#
-[isomorphic](https://en.wikipedia.org/wiki/Isomorphic_keyboard) layout for EWIs
+[isomorphic](https://en.wikipedia.org/wiki/Isomorphic_keyboard) layout for [EWI](https://en.wikipedia.org/wiki/Electronic_wind_instrument)s
+
+## Summary:
+
+offhand# is a fingering layout for an electronic wind instrument that pursues:
+1. Consistent fingerings across keys (a.k.a. isomorphism): All major keys are fingered the same. All minor keys are fingered the same. Chords and patterns follow, retaining the same fingering across all keys.
+2. Chromatic approach: Accidentals are always within immediate reach and are easy to key.
+3. Minimal position shifts: Diatonics are always within immediate reach and are easy to key.
+4. All major and minor keys are playable: The minimal range is c2-a#3 (= 23 consecutive tones at least) without octave shifting.
+5. No glitching: Apart from octave shifters, sustain and mod wheel for bending, no accidental modifiers (keys dedicated to sharp and flat) are used and the un-fingered (no keys pressed) position doesn't produce sound. The expanded range also means there's less breaks to work around.
+6. Ergonomic with minimal position shifting: The use of a 6x4 / 7x3 split keyboard with 3/4in keys is widespread with plenty speed and accuracy oriented ergonomic designs (staggering the columns... concave... tenting...) around to choose from.
+7. Polyphony and chording: Though not a design goal, Jazz guitar-style chord-melody voice leading versatility is achieved with a sustain key / pedal.
+
+## Breakdown:
+
+As its name suggests, the offhand# layout projects to the left hand by a semi-tone's worth (minor second); With a whole tone's worth (major second) on the X axis and five semitones (perfect fourth) on the Y axis:
 
 ![offhand#6x4](./images/offhandSharp_6x4.svg)
 
-## Some major and minor scale examples
+The result is that all major scales are played single-handedly across two rows without wrist position changes:
 
 ![offhand#6x4 C Major](./images/offhandSharp_6x4_C.svg)
 
@@ -11,19 +26,47 @@
 
 ![offhand#6x4 A Major](./images/offhandSharp_6x4_A.svg)
 
+![offhand#6x4 A#](./images/offhandSharp_6x4_ASHARP.svg)
+
+That is: 1st row right index -> 1st row right middle -> 1st row right ring -> 1st row right pinky -> 2nd row right index -> 2nd row right middle -> 2nd row right ring.
+
+The minor keys are played using both hands but they too are limited to two rows and don't require position changes:
+
 ![offhand#6x4 A Minor](./images/offhandSharp_6x4_Am.svg)
 
 ![offhand#6x4 A# Minor](./images/offhandSharp_6x4_ASHARPm.svg)
 
-![offhand#6x4 A#](./images/offhandSharp_6x4_ASHARP.svg)
+That is: 1st row right index -> 1st row right middle -> 2nd row left index -> 2nd row right index -> 2nd row right middle finger -> 1st row left index finger -> 1st row left middle finger.
+
+Chromatic runs follow with no wrist position changes.
+
+## Instrument design and the thumb
+
+Comparable to accordions, guitars and the [Berglund Instruments' NuRAD](https://berglundinstruments.com/nurad-ewi-sax-etc-fingering-instrument/), the offhand# is designed for an instrument that is supported by a strap with prongs at both sides with the arms being held without pronation or supination at parallel and the hands and thumbs being left free from having to stabilize and support. Thus, the right thumb is employed to shift octaves through the use of touch surfaces or an octave roller while the left thumb is used to trigger a sustain key or a pitch bending mod wheel / joystick / touch surface.
+
+Breath control through a differential pressure sensor is, of course, a given for an electronic wind instrument. Refer to the [Haxophone](https://github.com/cardonabits/haxo-hw) for details.
+
+A gyro-accelerometer chip may be employed as an additional control channel to trigger the likes of a saxophone growl, vibrato or a cello's bow work.
+
+Bite sensors could also be incorporated into the design as a control channel.
+
+### Alternative keyboard-like design
+
+It's also possible to step away from the EWI design into a keyboard design by modifying existing mechanical keyboards where the thumbs rest at the sides and outfitting them with 4 thumb keys on the right for octave shifting and a button and thumb joystick on the left for sustain and bending.
 
 ## Inverted variation
+
+The surveying of different ergonomic keyboard models suggests some players might prefer not utilizing their pinky in the last column at the bottom row while others may prefer avoiding the last column's top row. For them, an inverted layout is presented:
 
 ![offhand#6x4 inverted](./images/offhandSharp_6x4_inverted.svg)
 
 ## 7x3 variation and its inversion
 
+It's also common to see keyboard users removing the numbers row altogether. Though this will necessitate a bit of wrist movement (like an accordion or guitar but considerably less than either), a 7x3 layout could be made available:
+
 ![offhand#7x3](./images/offhandSharp_7x3.svg)
+
+An inverted variant is also presented if only to accommodate inverted 6x4 players wishing to experiment with 7x3 layouts:
 
 ![offhand#7x3 inverted](./images/offhandSharp_7x3_inverted.svg)
 
